@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse('home')
+    return render(request, 'recipes/home.html') #global/home.html chama o template base
 
 def contact(request):
     return HttpResponse('contact')
